@@ -1,0 +1,13 @@
+CATEGORY="Libs"
+SUMMARY="YAML 1.1 parser library"
+DESCRIPTION="LibYAML is a YAML 1.1 parser and emitter written in C."
+HOMEPAGE="http://pyyaml.org/wiki/LibYAML"
+SRC_URI="http://pyyaml.org/download/libyaml/${P}.tar.gz"
+
+PKG_NAMES="libyaml0_2 libyaml-devel"
+libyaml0_2_CONTENTS="usr/bin/cygyaml-0-2.dll"
+libyaml_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
+
+KEEP_LA_FILES="none"
