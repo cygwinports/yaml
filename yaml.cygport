@@ -1,3 +1,6 @@
+NAME="yaml"
+VERSION=0.1.4
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="YAML 1.1 parser library"
 DESCRIPTION="LibYAML is a YAML 1.1 parser and emitter written in C."
