@@ -1,16 +1,11 @@
 NAME="yaml"
-VERSION=0.1.4
-RELEASE=2
+VERSION=0.1.6
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="YAML 1.1 parser library"
 DESCRIPTION="LibYAML is a YAML 1.1 parser and emitter written in C."
 HOMEPAGE="http://pyyaml.org/wiki/LibYAML"
-SRC_URI="http://pyyaml.org/download/libyaml/${P}.tar.gz"
-PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2013-6393-string-overflow.patch
-	http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2013-6393-node-id-hardening.patch
-	http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2013-6393-indent-column-overflow-v2.patch
-"
+SRC_URI="http://pyyaml.org/download/libyaml/yaml-${VERSION}.tar.gz"
 
 PKG_NAMES="libyaml0_2 libyaml-devel"
 libyaml0_2_CONTENTS="usr/bin/cygyaml-0-2.dll"
