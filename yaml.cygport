@@ -1,11 +1,12 @@
 NAME="yaml"
 VERSION=0.1.6
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="YAML 1.1 parser library"
 DESCRIPTION="LibYAML is a YAML 1.1 parser and emitter written in C."
 HOMEPAGE="http://pyyaml.org/wiki/LibYAML"
 SRC_URI="http://pyyaml.org/download/libyaml/yaml-${VERSION}.tar.gz"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/libyaml.git/plain/libyaml-CVE-2014-9130.patch"
 
 PKG_NAMES="libyaml0_2 libyaml-devel"
 libyaml0_2_CONTENTS="usr/bin/cygyaml-0-2.dll"
